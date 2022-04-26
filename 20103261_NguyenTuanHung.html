@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="col-xs-12">
+            <img src="../HEADER.PNG" alt="" width="100%">
+        </div>
+    </div>
+
+    <div class="col-xs-12">
+        <nav class="navbar ">
+            <ul class="navbar nav">
+                <li class="navbar-item"><a class="navbar-link" href="#" style="margin-right: 20px;" id="btn1">Đăng nhập</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="#" id="btn2" >Đăng kí</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="col-xs-12">
+        <h4 style="text-align: center;">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</h4>
+        <table class="table table-striped" role="table" id="danhSach">
+            <tr>
+                <th>STT</th>
+                <th>Họ Tên</th>
+                <th>Số áo</th>
+                <th>Câu lạc bộ</th>
+                <th>Ngày tập trung</th>
+                <th>Điện thoại</th>
+                <th>Ảnh đại diện</th>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div class="col-xs-12">
+            <p style="text-align: center;">SVTH:Nguyễn Tuấn Hùng. Mã sinh viên: 20103261. Lớp: DHKHMT16A</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" role="dialog" id="myModal"> 
+        <div class="modal-dialog " style="margin-top: 10px;"> 
+            <div class="modal-content"> 
+                <div class="modal-header"> 
+                    <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2> 
+                </div> 
+                <div class="modal-body"> 
+                    <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                        <label for="Name" class="control-label col-xs-3">Họ tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+                    
+                        <label for="Ao" class="control-label col-xs-3" >Số áo</label>
+                        <div class="col-xs-9" style="margin-bottom: 10px;">
+                            <input type="text" id="Ao" class="form-control">
+                            <span class="text-danger" id="tbAo" style="color: red;">*</span>
+                        </div>
+                    
+                        <label for="CLB" class="control-label col-xs-3">Câu lạc bộ</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="CLB" class="form-control">
+                            <span class="text-danger" id="tbCLB" style="color: red;">*</span>
+                        </div>
+                    
+                        <label for="NTT" class="control-label col-xs-3">Ngày tập trung</label>
+                        <div class="col-xs-9">
+                            <input type="date" id="NTT" class="form-control">
+                            <span class="text-danger" id="tbNTT" style="color: red;">*</span>
+                        </div>
+                    
+                        <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="SDT" class="form-control">
+                            <span class="text-danger" id="tbSDT" style="color: red;">*</span>
+                        </div>
+                    
+                        <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" id="ADD" class="form-control">
+                            <span class="text-danger" id="tbADD" style="color: red;">*</span>
+                        </div>
+                    
+                        <button class="btn btn-success btn-group-justified" id="Save" type="button" style="color: white;background-color: green;width: 100%;">Lưu</button>
+                    </form> 
+               </div>	 
+           </div>	 	
+        </div>	 		
+    </div> 			
+</body>
+</html>
